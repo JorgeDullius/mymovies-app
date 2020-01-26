@@ -1,0 +1,32 @@
+.card__container{
+    display: flex;
+    flex-direction: column;
+    max-height: 370px;
+    width: 180px;
+    margin-right:10px;
+    margin-bottom:15px;
+    justify-content: space-between;
+    justify-items: flex-end;
+
+}
+.info__container{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.img__container{
+    height: 300px;
+}
+.button{
+    cursor: pointer;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #00B36B;
+    border:0;
+    border-radius: 15px;
+    height:20px;
+}
+.title{
+    height: 65px;
+}

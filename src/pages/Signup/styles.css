@@ -1,0 +1,213 @@
+.topBarContainer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.topBarContainer .topBar{
+    display: flex;
+    flex-basis: 80%;
+    justify-content: space-between;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 100%;
+    height: 90vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    display:flex;
+    width: 83vw;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.login form{
+    height: 475px;
+    display: flex;
+    flex-basis: 40vw;
+    flex-direction: column;
+}
+
+.login form #labelCheckbox{
+    font-family: 'Lato';
+    font-weight: bold;
+}
+.login form #labelForm{
+    font-family: 'Lato';
+    font-weight: 900;
+    color: black;
+    font-size:15px;
+    display: flex;
+    flex-direction: column;
+}
+.negativeFeedback{
+    transition: opacity 0.5s; 
+    visibility:visible; 
+    opacity:1;
+    margin-top: 3px;
+    margin-right:5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:red;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 12px;
+}
+.positiveFeedback{
+    visibility:hidden; 
+    opacity:0
+}
+.login form #labelCheckbox{
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #2D4885;
+    font-size: 11px;
+}
+.toastifyStyle{
+    font-family: "Roboto" !important;
+    border-radius: 4px !important;
+    font-size: 16px;
+    padding-left:30px !important;
+    height: 70px;
+}
+.input__signup{
+    width:100%;
+    border-radius: 25px;
+    border:1px solid;
+    border-color: #009152;
+    height: 45px;
+    margin-top:4px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    padding: 7px 14px 9px;
+    transition: all 0.2s ease-in-out;
+    outline: 0;
+}
+.input__signup:focus, .input__signup:focus{
+    box-shadow: 0px 0px 0px 2px #00B36B;
+    border-color: #00B36B;
+}
+.login a{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 12px;
+    color: #00B2FF;
+}
+.login form button{
+    cursor: pointer;
+    margin-top:15px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #00B36B;
+    border:none;
+    width: 150px;
+    height: 50px;
+    border-radius:25px;
+    transition: all 0.5s;
+    margin-bottom: 5px;
+}
+.login form button:disabled{
+    cursor: not-allowed;   
+    background-color: #00B36B;
+}
+.login form button:enabled span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.login form button:enabled span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.login form button:enabled:hover span {
+    padding-right: 25px;
+}
+  
+.login form button:enabled:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.login img{
+    width:29vw;
+    min-width: 350px;
+}
+.login #loginMobileImage{
+    display: none;
+}
+
+@media screen and (max-width: 965px) {
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+    .login img{
+        width: 65vw;
+        max-width: 370px;
+        min-width: 150px !important;
+        margin-bottom: 9px;
+    }
+    .login #loginDesktopImage{
+        display: none;
+    }
+    .login #loginMobileImage{
+        display: inline-block;
+    }
+    .login form{
+        align-items: center;
+        display: flex;
+        height: 60vh;
+        width: 80vw;
+    }
+    .login form #labelForm{
+        width: 80vw;
+        min-width: 290px;
+        max-width: 420px;
+    }
+    .negativeFeedback{
+        align-self: flex-start;
+        padding-top:3px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .positiveFeedback{
+        align-self: flex-start;
+
+        padding-top:3px;
+        padding-bottom: 5px;
+    }
+    input[type="text"], input[type="password"] {
+        height: 40px;
+        margin-top: 0;
+    }
+    .login form button{
+        height: 42px;
+        min-height: 42px;
+        border-radius:25px;
+        width: 129px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .topBarContainer{
+        height: 6vh;
+    }
+}

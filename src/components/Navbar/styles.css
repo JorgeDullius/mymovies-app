@@ -1,0 +1,35 @@
+.header__container{
+    width: 100%;
+    margin-top: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.header__container .navbar__container{
+    display: flex;
+    flex-basis: 80%;
+    justify-content: flex-end;
+}
+.nav__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #00B36B;
+    border:0;
+    border-radius: 10px;
+    height:40px;
+    margin-left: 10px;
+    width:100px;
+}
+.toastifyStyle{
+    font-family: "Roboto" !important;
+    border-radius: 4px !important;
+    font-size: 16px;
+    padding-left:30px !important;
+    height: 70px;
+}
