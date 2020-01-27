@@ -51,7 +51,7 @@ export default class Home extends Component {
                 id:event.currentTarget.id,
                 profileId:localStorage.getItem("profileId")
             });      
-            toast.success("Adicionado com sucesso!")  
+            toast.success("Adicionado com sucesso! Atualize para visualizar")  
         }catch(error){
             toast.error(error.response.data.error);
         }
@@ -59,7 +59,7 @@ export default class Home extends Component {
     render() {
         return(
             <>
-                <Navbar />
+                <Navbar page="watchlist"/>
                 <div className="watchlist__container">
                     <h1> Para assistir: </h1>
                     <div style={{ width:"100%", display:"flex",alignItems:"center", flexDirection:"column" }}>

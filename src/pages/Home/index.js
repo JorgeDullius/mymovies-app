@@ -60,7 +60,7 @@ export default class Home extends Component {
     render() {
         return(
             <>
-                <Navbar />
+                <Navbar page="Home"/>
                 <div style={{ width:"100%", display:"flex",alignItems:"center", flexDirection:"column" }}>
                     <input className="search__input" value = {this.state.query} type="text" onChange={this.handleInputChange} />
                     <div style={{height:"100%", display:"flex", flexDirection:"row", flexWrap:"wrap", maxWidth:"90%"}}>
